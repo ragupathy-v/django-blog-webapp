@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock extra_css %}
+{% block content %}
+
+    <div class='container'>
+      <h1 class='profile'>Profile</h1>
+        <h1 class='title'>User:{{seluser.username}}</h1>
+    {% for allblog in allblog  %}
+          <div class="card mt-5">
+            <div class="card-body">
+              <h3 class="card-title blog-title">{{allblog.title}}</h3>
+              <p class="card-text">{{allblog.sub_title}}</p>
+              <a href="{% url 'fullblog' allblog.id %}" class="btn btn-primary">Reade more</a>
+              <hr>
+              
+              {% if allblog.related_user == request.user %}
+              <a href="{% url 'delete_blog' allblog.id %}" class="delete-blog">Delete Blog</a>
+             {% endif %}
+
+             
+            </div>
+          </div>
+        
+    {% endfor %}
+    </div>
+{% endblock content %}

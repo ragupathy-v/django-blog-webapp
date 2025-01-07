@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/addblog.css'%}">
+{% endblock extra_css %}
+{% block content %}
+<div class="addblog-div">
+    <div>
+    <h1 class='title'>Add blog</h1>
+    <div>
+<form action="" method='POST' class="inputs">
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    {% csrf_token %}
+    <input class='input' type="text" name='title' placeholder='Enter blog title' required><br>
+    <input type="text" class='input' name='subtitle' placeholder='Enter blog sub title' required><br>
+    <textarea name="content" placeholder='Enter blog content'></textarea>
+    <button class='button' type='submit'>submit</button>
+</form>
+</div>
+{% endblock content %}

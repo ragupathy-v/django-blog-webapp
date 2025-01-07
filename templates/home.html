@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock extra_css %}
+{% block content %}
+
+<div class='container'>
+
+    <h1 class='title'>All blog Post</h1>
+{% for blog in blog_list  %}
+      <div class="card mt-5">
+        <div class="card-body">
+          <h3 class="card-title blog-title">{{blog.title}}</h3>
+          <p class="card-text">{{blog.sub_title}}</p>
+          <a href="{% url 'fullblog' blog.id %}" class="btn btn-primary">Reade more</a>
+          <hr>
+          <a  href="{% url 'profile' blog.related_user.id %}"><spam class='user'>{{blog.related_user}}</spam></a>
+          {% if is_author %}
+          <a href="zdfs"> delete</a>
+          {% endif %}
+         
+        </div>
+      </div>
+    
+{% endfor %}
+</div>
+{% endblock content %}

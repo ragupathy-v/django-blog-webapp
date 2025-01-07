@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block extra_css %}
+{% load static %}
+
+  <link rel="stylesheet" href="{% static 'css/fullblog.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+
+      <div class='fullblog-div text-center' >
+        <div class='container'>
+          
+         <h1 class='title'>{{selected_blog.title}}</h1>
+          <h5 class='subtitle'>{{selected_blog.sub_title}}</h5>
+          <p class='content'>{{selected_blog.content}}</p>
+          <span class='user'>--blog by {{selected_blog.related_user}}</span>
+        </div>
+      </div>
+    
+
+
+{% endblock content %}

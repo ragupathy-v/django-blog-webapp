@@ -1,0 +1,32 @@
+.title{
+    color: rgba(8, 6, 0, 0.912);
+    font-weight: 800;
+    font-family: serif;
+    
+ }
+ .profile{
+    padding-top: 90px;
+    text-align: center;
+    color: rgba(8, 6, 0, 0.912);
+    font-weight: 800;
+    font-family: serif;
+ }
+
+
+
+  .blog-title{
+     color: rgba(8, 6, 0, 0.912);
+     font-weight: 800;
+     font-family: serif;
+    
+  }
+
+  .user{
+    color: rgba(32, 32, 2, 0.386);
+  }
+
+  .delete-blog{
+    color: red;
+    text-decoration: none;
+    padding-left: 20px;
+  }

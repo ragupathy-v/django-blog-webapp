@@ -1,0 +1,23 @@
+.title{
+    color: rgba(8, 6, 0, 0.912);
+    font-weight: 800;
+    font-family: serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top:70PX;
+ }
+
+ 
+ .blog-title{
+    color: rgba(8, 6, 0, 0.912);
+    font-weight: 800;
+    font-family: serif;
+   
+ }
+.user{
+   color: rgba(32, 32, 2, 0.386);
+ }
+a{
+   text-decoration: none;
+}
