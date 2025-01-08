@@ -1,0 +1,38 @@
+.fullblog-div{
+    padding-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbfbfb;
+}
+
+.title{
+    color: rgba(7, 5, 0, 0.912);
+    font-weight: 800;
+    font-family: serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+ }
+
+ .subtitle{
+    color: rgba(7, 5, 0, 0.912);
+    font-weight: 600;
+    font-family: serif;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+ }
+
+ .content{
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+ }
+ .user{
+   color: rgba(32, 21, 2, 0.61);
+   font-weight: 500;
+   font-family: serif;
+ }

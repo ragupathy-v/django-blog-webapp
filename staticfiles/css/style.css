@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;  
+}
+.atag{
+    font-weight: 600;
+}
+.atag:hover{
+    background-color: rgba(0, 0, 255, 0.832);
+    color: white;
+}
+.main-div{
+    background-color: #fbfbfb;
+}
