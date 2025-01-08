@@ -1,2 +1,2 @@
-pip install -r requirement.txt
-python manage.py collectstatic
+pip install -r requirements.txt
+python manage.py collectstatic --noinput
