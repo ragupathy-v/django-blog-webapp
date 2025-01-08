@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@vx3cbp_@lxsqxe_zh@va^wi1mwnfbqkj*jovo&1-!%w)*qcp9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
+ALLOWED_HOSTS = ['your-app.onrender.com']
 
 
 # Application definition
@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Blog',
-        'PORT':'10631',
-        'HOST':'mysql-database-ragupathyv02-d8f0.d.aivencloud.com',
-        'USER':'avnadmin',
-        'PASSWORD':'AVNS_q1TW_OLYWgTdpJDUIsa'
+        'NAME': os.environ.get('Blog'),
+        'PORT':os.environ.get('10631'),
+        'HOST':os.environ.get('mysql-database-ragupathyv02-d8f0.d.aivencloud.com'),
+        'USER':os.environ.get('avnadmin'),
+        'PASSWORD':os.environ.get('AVNS_q1TW_OLYWgTdpJDUIsa')
     }
 }
 
@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-STATIC_ROOT = BASE_DIR/'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
