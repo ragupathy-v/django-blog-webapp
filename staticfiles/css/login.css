@@ -7,7 +7,7 @@
     background-color: #fbfbfb;
 }
 .form{
-    width: 50%;
+    width: 60%;
     height: 60%;
     display: flex;
     align-items: center;
@@ -69,3 +69,17 @@
     font-weight: 500;
 }
 
+@media(max-width:850px){
+    .form{
+        width: 80%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column ;
+        background-color: #fefefe;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 10px rgba(23, 23, 1, 0.066);
+        overflow-y: hidden;
+    }
+}
