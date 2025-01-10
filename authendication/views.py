@@ -38,8 +38,11 @@ def register(request):
          return render(request,'register.html')
 
 def user_login(request):
-
+    print(request.user)
+    if request.user.is_authenticated:
+        return redirect('home_page')
     if request.method=='POST':
+        
         username=request.POST['username']
         password=request.POST['password']
         print(username,password)
