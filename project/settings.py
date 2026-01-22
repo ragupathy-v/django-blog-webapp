@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Blog',
+        'NAME': 'defaultdb',
         'PORT':'10631',
-        'HOST':'mysql-database-ragupathyv02-d8f0.d.aivencloud.com',
+        'HOST':'mysql-170354a0-ragupathyv02-d8f0.d.aivencloud.com',
         'USER':'avnadmin',
-        'PASSWORD':'AVNS_q1TW_OLYWgTdpJDUIsa'
+        'PASSWORD':'AVNS_sD1V3oH2dmRMyVeA72j'
     }
 }
 
